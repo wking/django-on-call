@@ -1,0 +1,5 @@
+MANIFEST
+sqlite3.db
+dist
+build
+*.pyc
