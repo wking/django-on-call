@@ -1,0 +1,8 @@
+If there's somthing strange in your Django_ app, who you gonna call?
+The django-on-call app helps your users figure that out, pointing them
+to one of your on-call sysadmins.  The admins can work out an on-call
+schedule among themselves, by posting a Python statement to the
+database (we're all consenting adults), and the view page will direct
+users to the appropriate on-call individual.
+
+.. _Django: https://www.djangoproject.com/
