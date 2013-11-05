@@ -33,7 +33,7 @@ Manage
 ======
 
 You might have several on call positions (sysadmins, webmasters,
-developers, ...), and you can have a separate ``OnCall`` instance for
+developers, …), and you can have a separate ``OnCall`` instance for
 each position.  You should use the `admin interface`_ to create_ the
 instances, after which your users can access them.  If you're using
 the example project and you created an ``OnCall`` instance with
