@@ -9,7 +9,7 @@ Quick-start
 ===========
 
 If you don't have a Django project and you just want to run
-django-on-call as a stand-alone service, you can use the examle
+django-on-call as a stand-alone service, you can use the example
 project.  Initialize the database with::
 
   $ python example/manage.py syncdb
