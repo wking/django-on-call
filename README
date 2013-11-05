@@ -40,6 +40,11 @@ the example project and you created an ``OnCall`` instance with
 ``sysadmin`` as the slug, they'll use
 http://localhost:8000/on-call/sysadmin/.
 
+A list of all positions is given by the ``ListView`` bound to
+http://localhost:8000/on-call/.  If your ``OnCall`` instances are
+returning something short and sweet (e.g. “John Doe (+1 234 567
+8901)”), this list view may be all you need.
+
 If you only want a few static ``OnCall`` instances, you can consider
 managing them with fixtures_ instead of using the admin interface.
 
