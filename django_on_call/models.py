@@ -4,6 +4,9 @@ from django.db import models
 
 
 class OnCall (models.Model):
+    slug = models.SlugField(
+        verbose_name='on-call slot',
+        help_text='Identify this among other possible on-call positions')
     rule = models.TextField(
         verbose_name='on-call rule',
         help_text='Python statement for determining the on-call admin')
