@@ -29,6 +29,23 @@ You may need to add the current directory to ``PYTHONPATH`` so
 
   $ PYTHONPATH=".:$PYTHONPATH" python example/manage.py runserver
 
+Manage
+======
+
+You might have several on call positions (sysadmins, webmasters,
+developers, ...), and you can have a separate ``OnCall`` instance for
+each position.  You should use the `admin interface`_ to create_ the
+instances, after which your users can access them.  If you're using
+the example project and you created an ``OnCall`` instance with
+``sysadmin`` as the slug, they'll use
+http://localhost:8000/on-call/sysadmin/.
+
+If you only want a few static ``OnCall`` instances, you can consider
+managing them with fixtures_ instead of using the admin interface.
+
 .. _Django: https://www.djangoproject.com/
 .. _Django documentation: https://docs.djangoproject.com/
 .. _POSIX shell: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_10
+.. _admin interface: http://localhost:8000/admin/django_on_on_call/oncall/
+.. _create: http://localhost:8000/admin/django_on_on_call/oncall/add/
+.. _fixtures: https://docs.djangoproject.com/en/dev/howto/initial-data/#providing-initial-data-with-fixtures
