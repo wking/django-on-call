@@ -5,6 +5,7 @@ from django.db import models
 
 class OnCall (models.Model):
     slug = models.SlugField(
+        unique=True,
         verbose_name='on-call slot',
         help_text='Identify this among other possible on-call positions')
     rule = models.TextField(
