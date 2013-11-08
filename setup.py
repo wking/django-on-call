@@ -37,4 +37,5 @@ setup(
         ],
     packages=['django_on_call'],
     provides=['django_on_call'],
+    package_data={'django_on_call': ['templates/django_on_call/*.html']},
     )

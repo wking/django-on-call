@@ -1,3 +1,2 @@
 include COPYING
-recursive-include django_on_call/templates *
 recursive-include example *.py .gitignore
