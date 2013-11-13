@@ -18,6 +18,11 @@ class OnCall (models.Model):
             'Python statement for determining the on-call admin.  '
             "Store the selected admin as 'on_call'."))
 
+    class Meta:
+        ordering = [
+            'slug',
+            ]
+
     def __str__(self):
         return 'on call {}'.format(self.slug)
 
