@@ -8,6 +8,10 @@ class OnCall (models.Model):
         unique=True,
         verbose_name='on-call slot',
         help_text='Identify this among other possible on-call positions')
+    description = models.TextField(
+        help_text=(
+            'A paragraph describing of this position, to help new users '
+            'match their problem to the appropriate on-call position.'))
     rule = models.TextField(
         verbose_name='on-call rule',
         help_text=(
